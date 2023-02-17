@@ -1,9 +1,12 @@
 import discord
 from discord.ext import commands
+import os
+from dotenv import dotenv_values
+config = dotenv_values(".env")
 
 app_id = "848920633508495431"
 pub_key = "58c3be3ed3b3ffbceeab4979ad30032b3128532b22b54ffe94c8a1b4b80756bf"
-token = "ODQ4OTIwNjMzNTA4NDk1NDMx.YLTo8w.PODBA-zejIWVlh5wXfkiLOIrVWA"
+token = config["TOKEN"]
 permissions = "68608"
 
 #https://discord.com/api/oauth2/authorize?client_id=848920633508495431&scope=bot&permissions=68608
